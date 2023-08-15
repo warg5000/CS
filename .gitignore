@@ -3,3 +3,4 @@ bin
 *.csproj
 Garbage 
 .vscode
+*.sln
