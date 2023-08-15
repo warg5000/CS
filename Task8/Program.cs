@@ -7,9 +7,9 @@ if (n < 2)
 else
 {
     string res = "";
-    for (int i = 2; i <= n; i = i + 2)
+    for (int i = 2; i <= n; i += 2)
     {
-        res = res + $"i = {i}, ";
+        res += $"i = {i}, ";
     }
     Console.Write(res.TrimEnd(' ').TrimEnd(',') + ".");
 }
