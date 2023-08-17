@@ -11,4 +11,4 @@ else
 {
     max=n2;
 }
-Console.WriteLine($"{max}");
+Console.WriteLine(max);

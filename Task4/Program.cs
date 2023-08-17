@@ -13,4 +13,4 @@ if (max < n3)
 {
     max = n3;
 }
-Console.WriteLine($"{max}");
+Console.WriteLine(max);
