@@ -5,21 +5,20 @@
 //23432 -> да
 bool Palindrome(int n)
 {
-    int rev = 0, r, check = n;
+    int rev = 0, check = n;
 
     while (n > 0)
     {
-        r = n % 10;
-        rev = rev * 10 + r;
+        rev = rev * 10 + n % 10;
         n = n / 10;
     }
-    return check==rev;
+    return check == rev;
 }
 
 Console.WriteLine("Введите пятизначное число");
 int num = Convert.ToInt32(Console.ReadLine());
 bool palindrome = Palindrome(num);
-string result = palindrome == true
+string result = palindrome
 ? ("Число является палиндромом")
 : ("Число не является палиндромом");
 Console.WriteLine(result);
