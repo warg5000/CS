@@ -3,7 +3,7 @@
 //14212 -> нет
 //12821 -> да
 //23432 -> да
-int Palindrome(int n)
+bool Palindrome(int n)
 {
     int rev = 0, r, check = n;
 
@@ -13,21 +13,13 @@ int Palindrome(int n)
         rev = rev * 10 + r;
         n = n / 10;
     }
-    if (check == rev)
-    {
-        return 1;
-    
-    }
-    else
-    {
-        return 0;
-    }
+    return check==rev;
 }
 
 Console.WriteLine("Введите пятизначное число");
 int num = Convert.ToInt32(Console.ReadLine());
-int palindrome = Palindrome(num);
-string result = palindrome == 1
+bool palindrome = Palindrome(num);
+string result = palindrome == true
 ? ("Число является палиндромом")
 : ("Число не является палиндромом");
 Console.WriteLine(result);
