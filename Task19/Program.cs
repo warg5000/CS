@@ -20,4 +20,5 @@ int num = Convert.ToInt32(Console.ReadLine());
 bool palindromeCheck = PalindromeCheck(num);
 Console.WriteLine(palindromeCheck
 ? ("Число является палиндромом")
-: ("Число не является палиндромом"));
+: ("Число не является палиндромом")
+);
