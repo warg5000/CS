@@ -7,10 +7,8 @@ void FillnPrintArray(int[] array)
     {
         array[i] = rnd.Next(101);
     }
-    for (int i = 0; i < array.Length; i++)
-    {
-        Console.Write($"{array[i]} ");
-    }
+    string result = string.Join(" ", array);
+    Console.Write(result);
 }
 int[] arr = new int[8];
 FillnPrintArray(arr);
