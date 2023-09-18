@@ -32,13 +32,12 @@ void ShowAveragePerRow(int rows, int columns, int[,] matrix)
 for (int i = 0; i < matrix.GetLength(0); i++)
 {
     double summ = 0;
-    double avg = 0;
     for(int j = 0; j < matrix.GetLength(1); j++)
     {
 summ = summ + matrix[i,j];
     }
-    avg = summ / columns;
-    Console.WriteLine($"Среднее арифметическое строки {i+1} равняется {avg}");
+    double avg = summ / columns;
+    Console.WriteLine($"Среднее арифметическое строки {i+1} равняется {Math.Round(avg, 2 , MidpointRounding.ToZero)}");
 }
 }
 Random rnd = new Random();
