@@ -29,7 +29,7 @@ void PrintMatrix(int[,] matrix)
 }
 void ShowTarget(int i, int j, int[,] matrix)
 {
-    if (i > matrix.Length || j > matrix.Length)
+    if (i >= matrix.GetLength(0) || j >= matrix.GetLength(1))
     {
         Console.WriteLine("Указаны неверные данные");
     }
