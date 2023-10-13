@@ -18,7 +18,7 @@ try
     Console.WriteLine("Задайте второе положительное число n");
     int n = Convert.ToInt32(Console.ReadLine());
     int Ackerman = Ack(m, n);
-    Console.Write($"Функция Аккермана = {Ackerman} ");
+    Console.Write($"Функция Аккермана = {Ackerman}");
 }
 catch (System.FormatException)
 {
