@@ -5,7 +5,7 @@ int Ack(int m, int n)
 {
      if (m < 0 || n < 0)
     {
-        throw new Exception("Ошибка, все числа должны быть натуральными");
+        throw new Exception("Ошибка, все числа должны быть положительными");
     }
     if (m == 0) return n + 1;
     if (n == 0) return Ack(m - 1, 1);
@@ -13,9 +13,9 @@ int Ack(int m, int n)
 }
 try
 {
-    Console.WriteLine("Задайте первое натуральное число m");
+    Console.WriteLine("Задайте первое положительное число m");
     int m = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("Задайте второе натуральное число n");
+    Console.WriteLine("Задайте второе положительное число n");
     int n = Convert.ToInt32(Console.ReadLine());
     int Ackerman = Ack(m, n);
     Console.Write($"Функция Аккермана = {Ackerman} ");
